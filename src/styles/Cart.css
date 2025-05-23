@@ -1,0 +1,79 @@
+/* ============ Cart Page Styles ============ */
+.cart-page {
+  max-width: 800px;
+  margin: 50px auto; /* Centers the cart */
+  padding: 20px;
+  background: #a0b1c1; /* Light background */
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Title */
+.cart-page h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+/* Empty Cart Message */
+.cart-page p {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+/* Checkout Button */
+.checkout-btn {
+  font-size: 1rem;
+  padding: 10px 20px;
+  background: #ff4d4d; /* Red for emphasis */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+  margin-right: 10px; 
+  transition: background 0.3s ease-in-out;
+}
+
+.checkout-btn:hover {
+  background: #ba9595;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .cart-page {
+    padding: 15px;
+  }
+
+  .cart-page h2 {
+    font-size: 1.8rem;
+  }
+
+  .checkout-btn {
+    font-size: 0.9rem;
+    padding: 8px 16px;
+  }
+}
+
+@media (max-width: 880px) {
+  .cart-page {
+    max-width: 90%; /* Adjust width for smaller screens */
+    margin: 30px auto;
+    padding: 15px;
+  }
+
+  .cart-page h2 {
+    font-size: 1.8rem; /* Slightly smaller heading */
+  }
+
+  .cart-page p {
+    font-size: 1rem; /* Adjust paragraph text */
+  }
+
+  .checkout-btn {
+    font-size: 0.9rem;
+    padding: 8px 16px;
+    margin-top: 15px;
+  }
+}

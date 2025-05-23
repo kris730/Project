@@ -1,0 +1,174 @@
+ /* General styles */
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #c3c191;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* Buttons */
+button {
+  padding: 10px 15px;
+  background-color: #d68e5d;
+  color: white;
+
+  border: 1px solid black ;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #e65c00;
+}
+
+/* Header */
+.header {
+  background: #333;
+  padding: 15px;
+  text-align: center;
+}
+
+.header nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+}
+
+/* Search Bar */
+.search-bar {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 80px;
+}
+
+.search-bar input {
+  width: 100%;
+  max-width: 400px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.search-bar input:focus {
+  outline: none;
+  border-color: #ff6600;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+}
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.explore-btn {
+  font-size: 1rem;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+.explore-btn:hover {
+  background-color: #0056b3;
+}
+
+
+/* checkout.css */
+.checkout-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh; /* Full screen height */
+  text-align: center;
+  background-color: #a7bacd; /* Light background */
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.checkout-btn {
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: #007bff; /* Blue button */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.checkout-btn:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Responsive styles */
+@media (max-width: 880px) {
+  .checkout-page {
+    padding: 20px;
+    min-height: auto;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+   
+  .checkout-btn {
+    font-size: 16px;
+    padding: 8px 16px;
+  }
+}
+
+@media (max-width: 250px) {
+  h1 {
+    font-size: 15px;
+  }
+  .product-image{
+   height: 4px;
+   width:4px;
+  }
+}
+
